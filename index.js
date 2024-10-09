@@ -13,6 +13,17 @@ Task 1) Create an object named 'book' using curly braces {} that includes the in
 
 Task 2) Access and return the book's title using dot notation and the published year using bracket notation.
 ******************************************************************/
+// Meshal
+const JSBook = {
+  title: 'JavaScript: The Definitive Guide',
+  author: 'David Flanagan',
+  publishedYear: 2020,
+  genre: 'Programming',
+};
+
+// Yousef
+const bookTitle = JSBook.title;
+const bookPubYear = JSBook['publishedYear'];
 
 /*****************************************************************
 Part 2: Modifying Objects
@@ -25,6 +36,14 @@ Task 4) The book has been assigned an ISBN number. Add a property 'ISBN' with a 
 
 Task 5) Modify the 'publishedYear' to 2021 as a new edition has been released.
 ******************************************************************/
+// M
+JSBook.pageCount = '1096';
+
+// Y
+JSBook.ISBN = '978-1491952023';
+
+// M
+JSBook.publishedYear = 2021;
 
 /*****************************************************************
 Part 3: Advanced Object Operations
@@ -38,3 +57,8 @@ Task 7) Add a 'reviews' property to the 'book' object, which will store an array
         Each review object should have 'reviewer' and 'comment' properties.
         Start with one review: {reviewer: "Book Critic", comment: "A comprehensive guide to JavaScript."}.
 ******************************************************************/
+// Y
+JSBook.author = ['David Flanagan', 'Another Author'];
+
+// M
+JSBook.reviews = [{ reviewer: 'Book Critic', comment: 'A comprehensive guide to JavaScript.' }];
